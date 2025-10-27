@@ -1,0 +1,59 @@
+/* ==========================
+   HEADER
+========================== */
+
+header {
+  display: flex;
+  background-color: var(--secondary-color);
+  justify-content: space-between;
+}
+
+header .logo a {
+  font-size: var(--em2);
+  font-weight: bold;
+}
+
+/* ==========================
+   NAV
+========================== */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--third-color);
+  border-top: 2px solid var(--effect-color);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: var(--em1);
+}
+
+/* ==========================
+   Main
+========================== */
+
+main {
+  display: flex;
+  background-color: var(--primary-color);
+  flex: 1;
+}
+
+.page-wrapper {
+  flex: 1;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer {
+  display: flex;
+  background-color: var(--third-color);
+  border-top: 3px solid var(--effect-color);
+}

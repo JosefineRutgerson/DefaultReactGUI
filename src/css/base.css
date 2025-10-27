@@ -1,0 +1,177 @@
+/* ==========================
+   COLORS
+========================== */
+
+:root {
+  --primary-color: #21295c;
+  --secondary-color: #1b3b6f;
+  --third-color: #065a82;
+  --effect-color: #ff6b35;
+  --text-color: #ffffff;
+
+  --em05: 0.5em;
+  --em1: 1em;
+  --em105: 1.5em;
+  --em2: 2em;
+
+  --rem1: 1rem;
+  --rem105: 1.5rem;
+  --rem2: 2rem;
+}
+
+/* ==========================
+   BASE RESET / NORMALIZE
+========================== */
+
+/* Box sizing and margin reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styling */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Remove default button styling */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* Smooth font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* ==========================
+   BASE TYPOGRAPHY
+========================== */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  height: 100%;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+  font-color: var(--text-color);
+}
+
+/* ==========================
+   LAYOUT
+========================== */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+header,
+footer,
+main,
+section,
+article,
+nav {
+  display: flex;
+  padding: var(--rem1) var(--rem105);
+}
+
+/* ==========================
+   IMAGES & MEDIA
+========================== */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================
+   FORMS
+========================== */
+input,
+textarea,
+select {
+  font: inherit;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* ==========================
+   UTILITIES
+========================== */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none !important;
+}
