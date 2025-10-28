@@ -1,16 +1,21 @@
 // Layout.jsx
-import React from "react";
+import React, { ReactNode } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Nav from "./Nav";
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: ReactNode; // Works for any JSX, string, fragment, etc.
+}
+
+const Layout = ({ children }: LayoutProps) => {
   return (
-    <>
+    <div className="layout-container">
       <Header />
       <Nav />
       <main>{children}</main>
-      <Footer />
-    </>
+    </div>
   );
-}
+};
+
+export default Layout;
